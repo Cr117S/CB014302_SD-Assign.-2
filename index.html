@@ -1,23 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Readify - Home</title>
     <link rel="stylesheet" href="./Public/Styles/style.css">
 </head>
+
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="explorer.html" class="active">Book Explorer</a></li>
-                <li><a href="tracker.html" class="active">Progress Tracker</a></li>
-                <li><a href="recommender.html" class="active">Book Recommender</a></li>
-                <li><a href="flow.html" class="active">Reading Flow</a></li>
-                <li><a href="feedback.html" class="active">FeedBack</a></li>
-                <li><a href="#"><img src="./Assets/Images/menu.png"></a></li>
-            </ul>
             <ul class="sidebar">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="explorer.html" class="active">Book Explorer</a></li>
@@ -25,9 +18,110 @@
                 <li><a href="recommender.html" class="active">Book Recommender</a></li>
                 <li><a href="flow.html" class="active">Reading Flow</a></li>
                 <li><a href="feedback.html" class="active">FeedBack</a></li>
+
+            </ul>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="explorer.html" class="active">Book Explorer</a></li>
+                <li><a href="tracker.html" class="active">Progress Tracker</a></li>
+                <li><a href="recommender.html" class="active">Book Recommender</a></li>
+                <li><a href="flow.html" class="active">Reading Flow</a></li>
+                <li><a href="feedback.html" class="active">FeedBack</a></li>
+                <li class="menu-btn">
+                    <button type="button" id="menuToggle" aria-label="Open menu">
+                        <img src="./Assets/Images/menu_icon.svg" alt="Menu" />
+                    </button>
+                </li>
+
             </ul>
         </nav>
     </header>
-    
+
+    <section class="home-slider">
+        <div class="slider-track" id="track">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="slide-inner">
+                    <div class="text">
+                        <h3>Atomic Habits</h3>
+                        <p>“Small habits, big results — make it obvious, easy, and repeatable.”</p>
+                    </div>
+                    <img src="./Assets/Images/atomic habits.jpg" alt="Atomic Habits cover" loading="eager" />
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="slide-inner">
+                    <div class="text">
+                        <h3>1984</h3>
+                        <p>“When truth is controlled, even your thoughts feel dangerous.”</p>
+                    </div>
+                    <img src="./Assets/Images/1984.jpeg" alt="1984 cover" loading="eager" />
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="slide-inner">
+                    <div class="text">
+                        <h3>A Game of Thrones</h3>
+                        <p>“When you play the game of thrones, you win or you die.”</p>
+                    </div>
+                    <img src="./Assets/Images/A Game of Thrones.jpeg" alt="A Game of Thrones cover" loading="eager" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="author">
+        <h2>Every day we highlight a different author to keep your reading journey fresh and inspiring.</h2>
+
+        <div class="author-card">
+            <p>Author of the Day:</p>
+            <p id="authorName">Loading...</p>
+        </div>
+    </section>
+
+    <!-- footer --- move the js to common.js -->
+    <footer class="footer">
+        <div class="footer-wrap">
+
+            <div class="footer-col">
+                <h3>Readify</h3>
+                <p class="footer-text">A calm corner to read, track, and stay consistent.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Links</h4>
+                <ul class="footer-links">
+                    <li><a href="./Public/Views/explorer.html">Books</a></li>
+                    <li><a href="./Public/Views/tracker.html">Tracker</a></li>
+                    <li><a href="./Public/Views/feedback.html">FAQ</a></li>
+                    <li><a href="./Public/Views/recommender.html">Recommends</a></li>
+                    <li><a href="./Public/Views/flow.html">Read Now</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p class="footer-text">Get reading tips and updates.</p>
+
+                <form class="newsletter">
+                    <input id="newsEmail" type="email" placeholder="you@example.com" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 BookSpace. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="Public/Scripts/home.js"></script>
+    <script src="Public/Scripts/common.js"></script>
 </body>
+
 </html>

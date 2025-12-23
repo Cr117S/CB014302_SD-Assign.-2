@@ -1,11 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Readify - Feedback</title>
+    <link rel="stylesheet" href="../Styles/style.css">
 </head>
+
 <body>
-    
+    <!-- Feedback Page -->
+    <div>
+        <form class="Myform" action="">
+
+            <div class="field">
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Tom Riddle" />
+            </div>
+
+            <div class="field">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="you@example.com" required />
+            </div>
+
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Write your message..."></textarea>
+            </div>
+
+            <div class="FormBtnDiv">
+                <button class="btn" id="saveBtn">Save</button>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- FAQ section -->
+    <section class="faq">
+        <h2>FAQ</h2>
+
+        <button class="faq-q">
+            What is this website for?
+            <span class="icon">+</span>
+        </button>
+        <div class="faq-a">
+            <p>This website helps you track your reading, save books, and stay consistent.</p>
+        </div>
+
+        <button class="faq-q">
+            Where is my progress saved?
+            <span class="icon">+</span>
+        </button>
+        <div class="faq-a">
+            <p>Your progress is saved in your browser using localStorage (no account needed).</p>
+        </div>
+
+        <button class="faq-q">
+            Can I edit my reading tracker later?
+            <span class="icon">+</span>
+        </button>
+        <div class="faq-a">
+            <p>Yes. You can update a book's progress anytime and mark it as completed.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-wrap">
+
+            <div class="footer-col">
+                <h3>Readify</h3>
+                <p class="footer-text">A calm corner to read, track, and stay consistent.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Links</h4>
+                <ul class="footer-links">
+                    <li><a href="./explorer.html">Books</a></li>
+                    <li><a href="./tracker.html">Tracker</a></li>
+                    <li><a href="./feedback.html">FAQ</a></li>
+                    <li><a href="./recommender.html">Recommends</a></li>
+                    <li><a href="./flow.html">Read Now</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p class="footer-text">Get reading tips and updates.</p>
+
+                <form class="newsletter">
+                    <input id="newsEmail" type="email" placeholder="you@example.com" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 BookSpace. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../Scripts/feedback.js"></script>
+    <script src="../Scripts/common.js"></script>
 </body>
+
 </html>
