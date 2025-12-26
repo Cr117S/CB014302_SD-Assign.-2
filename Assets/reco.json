@@ -1,0 +1,65 @@
+[
+  {
+    "id": "hobbit",
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "genre": "fantasy",
+    "length": "medium"
+  },
+  {
+    "id": "1984",
+    "title": "1984",
+    "author": "George Orwell",
+    "genre": "fiction",
+    "length": "medium"
+  },
+  {
+    "id": "atomic",
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "genre": "nonfiction",
+    "length": "short"
+  },
+  {
+    "id": "dune",
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "genre": "fiction",
+    "length": "long"
+  },
+  {
+    "id": "gatsby",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "genre": "fiction",
+    "length": "short"
+  },
+  {
+    "id": "harry1",
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "genre": "fantasy",
+    "length": "medium"
+  },
+  {
+    "id": "sapiens",
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "genre": "nonfiction",
+    "length": "long"
+  },
+  {
+    "id": "mockingbird",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "genre": "fiction",
+    "length": "medium"
+  },
+  {
+    "id": "richdad",
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert T. Kiyosaki",
+    "genre": "nonfiction",
+    "length": "short"
+  }
+]

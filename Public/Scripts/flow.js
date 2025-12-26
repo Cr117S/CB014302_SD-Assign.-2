@@ -4,7 +4,7 @@ const btn = document.getElementById("soundToggle");
 btn.addEventListener("click", async () => {
   if (audio.paused) {
     try {
-      await audio.play(); // required user click
+      await audio.play(); 
       audio.volume = 0.2;
       btn.textContent = "Stop";
     } catch (err) {
