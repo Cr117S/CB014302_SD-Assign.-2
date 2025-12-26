@@ -1,0 +1,124 @@
+.hidden {
+    display: none;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.modal {
+    width: min(92vw, 700px);
+    max-height: 85vh;
+    overflow: auto;
+    background: #fff;
+    border: 1px solid #111;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 14px 16px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.modal-header p {
+    margin: 4px 0 0;
+    color: #555;
+    font-style: italic;
+}
+
+.modal-close {
+    border: 1px solid #111;
+    background: #fff;
+    border-radius: 10px;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 14px 16px;
+}
+
+.modal-img {
+    display: block;
+    margin: 0 auto 14px;
+    width: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #e6e6e6;
+}
+
+.modal-body h3 {
+    margin: 14px 0 6px;
+    font-size: 15px;
+}
+
+.modal-body p {
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    font-size: 14px;
+}
+
+.series {
+    display: flex;
+    gap: 12px;
+}
+
+.series-box {
+    flex: 1;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    padding: 10px 12px;
+    background: #fafafa;
+}
+
+.series h4 {
+    margin: 0 0 8px;
+    font-size: 14px;
+}
+
+.series ul {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 14px;
+}
+
+.reviews {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.reviews th,
+.reviews td {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    text-align: left;
+}
+
+.reviews th {
+    background: #fafafa;
+}
+
+/* responsive */
+@media (max-width: 600px) {
+    .series {
+        flex-direction: column;
+    }
+}
