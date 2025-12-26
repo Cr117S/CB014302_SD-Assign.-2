@@ -521,6 +521,16 @@ nav a:hover {
   gap: 10px;
 }
 
+.footer-home {
+  color: #444;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.footer-home:hover {
+  color: black;
+}
+
 .footer-text {
   color: #444;
   font-size: 17px;

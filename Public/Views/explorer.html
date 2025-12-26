@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Readify - Explore more</title>
+    <link rel="stylesheet" href="../Styles/model.css">
     <link rel="stylesheet" href="../Styles/style.css">
 </head>
 
@@ -28,7 +29,10 @@
                     <option value="">Select a genre</option>
                     <option value="fiction">Fiction</option>
                     <option value="nonfiction">Non-fiction</option>
+                    <option value="dystopian">Dystopian</option>
                     <option value="fantasy">Fantasy</option>
+                    <option value="science fiction">Science Fiction</option>
+                    <option value="self help">Self Help</option>
                 </select>
             </div>
 
@@ -36,57 +40,87 @@
     </div>
 
     <!-- cards -->
-    <section class="books">
-        <div class="book-card">
-            <img src="../../Assets/Images/The Alchemist.jpeg" alt="Book cover">
-            <div class="book-info">
-                <h3>The Alchemist</h3>
-                <p>Paulo Coelho</p>
-            </div>
-        </div>
-
-        <div class="book-card">
-            <img src="../../Assets/Images/atomic habits.jpeg" alt="Book cover">
-            <div class="book-info">
-                <h3>Atomic Habits</h3>
-                <p>James Clear</p>
-            </div>
-        </div>
-
-        <div class="book-card">
-            <img src="../../Assets/Images/1984.jpeg" alt="Book cover">
-            <div class="book-info">
-                <h3>1984</h3>
-                <p>George Orwell</p>
-            </div>
-        </div>
+    <section>
+        <div class="books" id="booksContainer"></div>
     </section>
 
+    <!-- Modal -->
+    <div class="modal-overlay hidden" id="bookModal">
+        <div class="modal">
+
+            <div class="modal-header">
+                <div>
+                    <h2 id="mTitle">Title</h2>
+                    <p id="mAuthor">Author</p>
+                </div>
+                <button class="modal-close" type="button">✕</button>
+            </div>
+
+            <div class="modal-body">
+                <img class="modal-img" id="mCover" src="" alt="Book cover">
+
+                <h3>Synopsis</h3>
+                <p id="mSynopsis"></p>
+
+                <h3>Series</h3>
+                <div class="series">
+                    <div class="series-box">
+                        <h4>Prequels</h4>
+                        <ul id="mPrequels"></ul>
+                    </div>
+
+                    <div class="series-box">
+                        <h4>Sequels</h4>
+                        <ul id="mSequels"></ul>
+                    </div>
+                </div>
+
+                <h3>Ratings & Reviews</h3>
+                <table class="reviews">
+                    <thead>
+                        <tr>
+                            <th>Source</th>
+                            <th>Rating</th>
+                            <th>Comment</th>
+                        </tr>
+                    </thead>
+                    <tbody id="mReviews"></tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- footer -->
     <footer class="footer">
         <div class="footer-wrap">
 
             <div class="footer-col">
-                <h3>Readify</h3>
+                <a href="../../index.html" class="footer-home">Readify</a>
                 <p class="footer-text">A calm corner to read, track, and stay consistent.</p>
             </div>
 
             <div class="footer-col">
                 <h4>Links</h4>
                 <ul class="footer-links">
-                    <li><a href="#books">Books</a></li>
-                    <li><a href="#tracker">Tracker</a></li>
-                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="./explorer.html">Books</a></li>
+                    <li><a href="./tracker.html">Tracker</a></li>
+                    <li><a href="./feedback.html">FAQ</a></li>
+                    <li><a href="./recommender.html">Recommends</a></li>
+                    <li><a href="./flow.html">Read Now</a></li>
                 </ul>
             </div>
 
-            <div class="footer-col" id="newsletterForm">
+            <div class="footer-col">
                 <h4>Newsletter</h4>
                 <p class="footer-text">Get reading tips and updates.</p>
 
-                <form class="newsletter">
+                <form class="newsletter" id="newsletterForm">
                     <input id="newsEmail" type="email" placeholder="you@example.com" required>
                     <button type="submit">Subscribe</button>
                 </form>
+
                 <p id="newsMsg"></p>
             </div>
 
@@ -98,6 +132,7 @@
     </footer>
 
     <script src="../Scripts/common.js"></script>
+    <script src="../Scripts/explorer.js"></script>
 </body>
 
 </html>

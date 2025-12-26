@@ -4,36 +4,38 @@ document.querySelectorAll(".btn").forEach((btn) => {
 });
 
 // footer
-
-const form = document.getElementById("newsletter");
+const newsletterForm = document.getElementById("newsletterForm");
 const emailInput = document.getElementById("newsEmail");
-const msg = document.getElementById("newsMsg");
+const newsMsg = document.getElementById("newsMsg");
 
-function showMsg(text, type) {
-  msg.textContent = text;
-  msg.className = type; // "success" or "error"
+function showNewsMsg(text, type) {
+  if (!newsMsg) return;
+  newsMsg.textContent = text;
+  newsMsg.className = type;
 }
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+if (newsletterForm && emailInput) {
+  newsletterForm.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  const email = emailInput.value.trim().toLowerCase();
+    const email = emailInput.value.trim().toLowerCase();
 
-  if (!email) return showMsg("Please enter your email.", "error");
-  if (!email.includes("@") || !email.includes(".") || email.length < 6) {
-    return showMsg("Please enter a valid email.", "error");
-  }
+    if (!email) return showNewsMsg("Please enter your email.", "error");
+    if (!email.includes("@") || !email.includes(".") || email.length < 6) {
+      return showNewsMsg("Please enter a valid email.", "error");
+    }
 
-  const key = "subscribers";
-  const list = JSON.parse(localStorage.getItem(key)) || [];
+    const key = "subscribers";
+    const list = JSON.parse(localStorage.getItem(key)) || [];
 
-  if (list.includes(email)) {
-    return showMsg("This email is already subscribed.", "error");
-  }
+    if (list.includes(email)) {
+      return showNewsMsg("This email is already subscribed.", "error");
+    }
 
-  list.push(email);
-  localStorage.setItem(key, JSON.stringify(list));
+    list.push(email);
+    localStorage.setItem(key, JSON.stringify(list));
 
-  showMsg("Subscribed successfully!", "success");
-  emailInput.value = "";
-});
+    showNewsMsg("Subscribed successfully!", "success");
+    emailInput.value = "";
+  });
+}
