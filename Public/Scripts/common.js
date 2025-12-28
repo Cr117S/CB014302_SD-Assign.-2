@@ -1,3 +1,12 @@
+function showSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "flex";
+}
+function hideSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "none";
+}
+
 document.querySelectorAll(".btn").forEach((btn) => {
   btn.addEventListener("mouseenter", () => btn.classList.add("hovered"));
   btn.addEventListener("mouseleave", () => btn.classList.remove("hovered"));
@@ -5,7 +14,7 @@ document.querySelectorAll(".btn").forEach((btn) => {
 
 // footer
 const newsletterForm = document.getElementById("newsletterForm");
-const emailInput = document.getElementById("newsEmail");
+const emailI = document.getElementById("newsEmail");
 const newsMsg = document.getElementById("newsMsg");
 
 function showNewsMsg(text, type) {
@@ -14,11 +23,11 @@ function showNewsMsg(text, type) {
   newsMsg.className = type;
 }
 
-if (newsletterForm && emailInput) {
+if (newsletterForm && emailI) {
   newsletterForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const email = emailInput.value.trim().toLowerCase();
+    const email = emailI.value.trim().toLowerCase();
 
     if (!email) return showNewsMsg("Please enter your email.", "error");
     if (!email.includes("@") || !email.includes(".") || email.length < 6) {
@@ -36,6 +45,6 @@ if (newsletterForm && emailInput) {
     localStorage.setItem(key, JSON.stringify(list));
 
     showNewsMsg("Subscribed successfully!", "success");
-    emailInput.value = "";
+    emailI.value = "";
   });
 }
