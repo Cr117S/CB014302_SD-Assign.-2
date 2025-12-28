@@ -55,5 +55,4 @@ btn.addEventListener("click", (e) => {
   localStorage.setItem(key, JSON.stringify(list));
 
   show(`Thanks ${name} (${email})! Feedback saved.`, "success");
-  form.reset();
 });
