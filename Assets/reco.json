@@ -61,5 +61,75 @@
     "author": "Robert T. Kiyosaki",
     "genre": "nonfiction",
     "length": "short"
+  },
+  {
+    "id": "lotr1",
+    "title": "The Fellowship of the Ring",
+    "author": "J.R.R. Tolkien",
+    "genre": "fantasy",
+    "length": "long"
+  },
+  {
+    "id": "lotr2",
+    "title": "The Two Towers",
+    "author": "J.R.R. Tolkien",
+    "genre": "fantasy",
+    "length": "long"
+  },
+  {
+    "id": "lotr3",
+    "title": "The Return of the King",
+    "author": "J.R.R. Tolkien",
+    "genre": "fantasy",
+    "length": "long"
+  },
+  {
+    "id": "animalfarm",
+    "title": "Animal Farm",
+    "author": "George Orwell",
+    "genre": "fiction",
+    "length": "short"
+  },
+  {
+    "id": "alchemist",
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "genre": "fiction",
+    "length": "short"
+  },
+  {
+    "id": "pride",
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "genre": "fiction",
+    "length": "medium"
+  },
+  {
+    "id": "martian",
+    "title": "The Martian",
+    "author": "Andy Weir",
+    "genre": "fiction",
+    "length": "medium"
+  },
+  {
+    "id": "thinkingfast",
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "genre": "nonfiction",
+    "length": "long"
+  },
+  {
+    "id": "deepwork",
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "genre": "nonfiction",
+    "length": "medium"
+  },
+  {
+    "id": "sherlock1",
+    "title": "The Hound of the Baskervilles",
+    "author": "Arthur Conan Doyle",
+    "genre": "fiction",
+    "length": "short"
   }
 ]

@@ -4,7 +4,7 @@ const btn = document.getElementById("soundToggle");
 btn.addEventListener("click", async () => {
   if (audio.paused) {
     try {
-      await audio.play(); 
+      await audio.play();
       audio.volume = 0.2;
       btn.textContent = "Stop";
     } catch (err) {
@@ -21,19 +21,14 @@ btn.addEventListener("click", async () => {
 const listEl = document.getElementById("completedList");
 const emptyMsg = document.getElementById("emptyMsg");
 
-const completed = JSON.parse(localStorage.getItem("completedBooks")) || [
-  {
-    title: "asd",
-    author: "asd",
-  },
-  {
-    title: "asd",
-    author: "asd",
-  },
-  {
-    title: "asd",
-    author: "asd",
-  },
+const completed = [
+  { title: "The Hobbit", author: "J.R.R. Tolkien" },
+  { title: "1984", author: "George Orwell" },
+  { title: "Atomic Habits", author: "James Clear" },
+  { title: "The Great Gatsby", author: "F. Scott Fitzgerald" },
+  { title: "Harry Potter and the Sorcerer's Stone", author: "J.K. Rowling" },
+  { title: "To Kill a Mockingbird", author: "Harper Lee" },
+  { title: "Deep Work", author: "Cal Newport" },
 ];
 
 if (completed.length === 0) {

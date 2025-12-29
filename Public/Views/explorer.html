@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <!-- Nav bar -->
     <header>
         <nav>
@@ -36,87 +35,88 @@
         </nav>
     </header>
 
-    <div>
-        <form class="Myform" action="">
+    <div class="explorerBG">
+        <div>
+            <form class="Myform" action="">
 
-            <div class="field">
-                <label for="name">Name</label>
-                <input id="name" type="text" placeholder="book name" />
-            </div>
-
-            <div class="field">
-                <label for="author">Author</label>
-                <input id="author" type="text" placeholder="author" />
-            </div>
-
-            <div class="field">
-                <label for="genre">Genre</label>
-                <select id="genre">
-                    <option value="">Select a genre</option>
-                    <option value="fiction">Fiction</option>
-                    <option value="nonfiction">Non-fiction</option>
-                    <option value="dystopian">Dystopian</option>
-                    <option value="fantasy">Fantasy</option>
-                    <option value="science fiction">Science Fiction</option>
-                    <option value="self help">Self Help</option>
-                </select>
-            </div>
-
-        </form>
-    </div>
-
-    <!-- cards -->
-    <section>
-        <div class="books" id="booksContainer"></div>
-    </section>
-
-    <!-- Modal -->
-    <div class="modal-overlay hidden" id="bookModal">
-        <div class="modal">
-
-            <div class="modal-header">
-                <div>
-                    <h2 id="mTitle">Title</h2>
-                    <p id="mAuthor">Author</p>
-                </div>
-                <button class="modal-close" type="button">✕</button>
-            </div>
-
-            <div class="modal-body">
-                <img class="modal-img" id="mCover" src="" alt="Book cover">
-
-                <h3>Synopsis</h3>
-                <p id="mSynopsis"></p>
-
-                <h3>Series</h3>
-                <div class="series">
-                    <div class="series-box">
-                        <h4>Prequels</h4>
-                        <ul id="mPrequels"></ul>
-                    </div>
-
-                    <div class="series-box">
-                        <h4>Sequels</h4>
-                        <ul id="mSequels"></ul>
-                    </div>
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="book name" />
                 </div>
 
-                <h3>Ratings & Reviews</h3>
-                <table class="reviews">
-                    <thead>
-                        <tr>
-                            <th>Source</th>
-                            <th>Rating</th>
-                            <th>Comment</th>
-                        </tr>
-                    </thead>
-                    <tbody id="mReviews"></tbody>
-                </table>
-            </div>
+                <div class="field">
+                    <label for="author">Author</label>
+                    <input id="author" type="text" placeholder="author" />
+                </div>
 
+                <div class="field">
+                    <label for="genre">Genre</label>
+                    <select id="genre">
+                        <option value="">Select a genre</option>
+                        <option value="fiction">Fiction</option>
+                        <option value="nonfiction">Non-fiction</option>
+                        <option value="dystopian">Dystopian</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="science fiction">Science Fiction</option>
+                        <option value="self help">Self Help</option>
+                    </select>
+                </div>
+
+            </form>
+        </div>
+
+        <!-- cards -->
+        <section>
+            <div class="books" id="booksContainer"></div>
+        </section>
+
+        <!-- Modal -->
+        <div class="modal-overlay hidden" id="bookModal">
+            <div class="modal">
+
+                <div class="modal-header">
+                    <div>
+                        <h2 id="mTitle">Title</h2>
+                        <p id="mAuthor">Author</p>
+                    </div>
+                    <button class="modal-close" type="button">✕</button>
+                </div>
+
+                <div class="modal-body">
+                    <img class="modal-img" id="mCover" src="" alt="Book cover">
+
+                    <h3>Synopsis</h3>
+                    <p id="mSynopsis"></p>
+
+                    <h3>Series</h3>
+                    <div class="series">
+                        <div class="series-box">
+                            <h4>Prequels</h4>
+                            <ul id="mPrequels"></ul>
+                        </div>
+
+                        <div class="series-box">
+                            <h4>Sequels</h4>
+                            <ul id="mSequels"></ul>
+                        </div>
+                    </div>
+
+                    <h3>Ratings & Reviews</h3>
+                    <table class="reviews">
+                        <thead>
+                            <tr>
+                                <th>Source</th>
+                                <th>Rating</th>
+                                <th>Comment</th>
+                            </tr>
+                        </thead>
+                        <tbody id="mReviews"></tbody>
+                    </table>
+                </div>
+
+            </div>
         </div>
     </div>
-
 
     <!-- footer -->
     <footer class="footer">

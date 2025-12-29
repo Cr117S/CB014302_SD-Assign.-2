@@ -17,6 +17,44 @@ const authors = [
   "Agatha Christie",
   "Stephen King",
   "Jane Austen",
+
+  // Classics
+  "Charles Dickens",
+  "Leo Tolstoy",
+  "Fyodor Dostoevsky",
+  "Mark Twain",
+  "Herman Melville",
+  "Oscar Wilde",
+  "Virginia Woolf",
+  "Emily Brontë",
+  "George Eliot",
+
+  // Modern fiction
+  "J.R.R. Tolkien",
+  "George R.R. Martin",
+  "Neil Gaiman",
+  "Kazuo Ishiguro",
+  "Margaret Atwood",
+  "Paulo Coelho",
+  "Dan Brown",
+  "Khaled Hosseini",
+
+  // Mystery / Thriller
+  "Arthur Conan Doyle",
+  "Gillian Flynn",
+  "Stieg Larsson",
+
+  // Non-fiction / Self-development
+  "Yuval Noah Harari",
+  "Malcolm Gladwell",
+  "Dale Carnegie",
+  "Cal Newport",
+  "Robert Greene",
+
+  // Sci-Fi
+  "Isaac Asimov",
+  "Frank Herbert",
+  "Philip K. Dick",
 ];
 
 // Make a stable "day number" (changes daily)
