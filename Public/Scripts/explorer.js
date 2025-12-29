@@ -5,7 +5,7 @@ const booksContainer = document.getElementById("booksContainer");
 
 // modal elements
 const modalOverlay = document.getElementById("bookModal");
-const closeBtn = modalOverlay.querySelector(".modal-close");
+const modelCloseBtn = modalOverlay.querySelector(".modal-close");
 
 const mTitle = document.getElementById("mTitle");
 const mAuthor = document.getElementById("mAuthor");
@@ -406,7 +406,7 @@ function fillReviews(tbody, reviews) {
 }
 
 // close modal
-closeBtn.addEventListener("click", () => {
+modelCloseBtn.addEventListener("click", () => {
   modalOverlay.classList.add("hidden");
 });
 

@@ -1,11 +1,17 @@
+const sidebar = document.querySelector(".sidebar");
+const menuBtn = document.getElementById("menuBtn");
+const closeBtn = document.getElementById("closeBtn");
+
 function showSidebar() {
-  const sidebar = document.querySelector(".sidebar");
   sidebar.style.display = "flex";
 }
+
 function hideSidebar() {
-  const sidebar = document.querySelector(".sidebar");
   sidebar.style.display = "none";
 }
+
+menuBtn.addEventListener("click", showSidebar);
+closeBtn.addEventListener("click", hideSidebar);
 
 document.querySelectorAll(".btn").forEach((btn) => {
   btn.addEventListener("mouseenter", () => btn.classList.add("hovered"));
