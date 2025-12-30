@@ -14,7 +14,9 @@
     <header>
         <nav>
             <ul class="sidebar">
-                <img src="../../Assets/Images/close.svg" alt="close_btn" id="closeBtn">
+                <li class="icon-item">
+                    <img src="../../Assets/Images/close.svg" alt="close_btn" id="closeBtn">
+                </li>
                 <li><a href="../../index.html">Home</a></li>
                 <li><a href="explorer.html">Book Explorer</a></li>
                 <li><a href="tracker.html">Progress Tracker</a></li>
@@ -30,23 +32,25 @@
                 <li class="hideOnMobile"><a href="recommender.html">Book Recommender</a></li>
                 <li class="hideOnMobile"><a href="flow.html">Reading Flow</a></li>
                 <li class="hideOnMobile"><a href="feedback.html">FeedBack</a></li>
-                <img src="../../Assets/Images/menu_icon1.svg" alt="" class="menuBtn" id="menuBtn">
+                <li class="icon-item">
+                    <img src="../../Assets/Images/menu_icon1.svg" alt="" class="menuBtn" id="menuBtn">
+                </li>
             </ul>
         </nav>
     </header>
 
     <div class="explorerBG">
         <div>
-            <form class="Myform" action="">
+            <form class="Myform">
 
                 <div class="field">
                     <label for="name">Name</label>
-                    <input id="name" type="text" placeholder="book name" />
+                    <input id="name" type="text" placeholder="book name">
                 </div>
 
                 <div class="field">
                     <label for="author">Author</label>
-                    <input id="author" type="text" placeholder="author" />
+                    <input id="author" type="text" placeholder="author">
                 </div>
 
                 <div class="field">
@@ -66,9 +70,7 @@
         </div>
 
         <!-- cards -->
-        <section>
-            <div class="books" id="booksContainer"></div>
-        </section>
+        <div class="books" id="booksContainer"></div>
 
         <!-- Modal -->
         <div class="modal-overlay hidden" id="bookModal">
@@ -83,7 +85,7 @@
                 </div>
 
                 <div class="modal-body">
-                    <img class="modal-img" id="mCover" src="" alt="Book cover">
+                    <img class="modal-img" src="" id="mCover" alt="Book cover">
 
                     <h3>Synopsis</h3>
                     <p id="mSynopsis"></p>
@@ -143,8 +145,11 @@
                 <p class="footer-text">Get reading tips and updates.</p>
 
                 <form class="newsletter" id="newsletterForm">
-                    <input id="newsEmail" type="email" placeholder="you@example.com" required>
-                    <button type="submit">Subscribe</button>
+                    <label for="newsEmail">Email</label>
+                    <div class="newsletter-row">
+                        <input id="newsEmail" type="email" placeholder="you@example.com" required>
+                        <button type="submit">Subscribe</button>
+                    </div>
                 </form>
 
                 <p id="newsMsg"></p>

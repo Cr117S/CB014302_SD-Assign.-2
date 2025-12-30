@@ -14,7 +14,9 @@
     <header>
         <nav>
             <ul class="sidebar">
-                <img src="../../Assets/Images/close.svg" alt="close_btn" id="closeBtn">
+                <li class="icon-item">
+                    <img src="../../Assets/Images/close.svg" alt="close_btn" id="closeBtn">
+                </li>
                 <li><a href="../../index.html">Home</a></li>
                 <li><a href="explorer.html">Book Explorer</a></li>
                 <li><a href="tracker.html">Progress Tracker</a></li>
@@ -30,23 +32,25 @@
                 <li class="hideOnMobile"><a href="recommender.html">Book Recommender</a></li>
                 <li class="hideOnMobile"><a href="flow.html">Reading Flow</a></li>
                 <li class="hideOnMobile"><a href="feedback.html">FeedBack</a></li>
-                <img src="../../Assets/Images/menu_icon1.svg" alt="" class="menuBtn" id="menuBtn">
+                <li class="icon-item">
+                    <img src="../../Assets/Images/menu_icon1.svg" alt="" class="menuBtn" id="menuBtn">
+                </li>
             </ul>
         </nav>
     </header>
 
     <!-- Feedback Page -->
     <div>
-        <form class="Myform" action="">
+        <form class="Myform" >
 
             <div class="field">
                 <label for="name">Name</label>
-                <input id="name" type="text" placeholder="Tom Riddle" />
+                <input id="name" type="text" placeholder="Tom Riddle" >
             </div>
 
             <div class="field">
                 <label for="email">Email</label>
-                <input id="email" type="email" placeholder="you@example.com" required />
+                <input id="email" type="email" placeholder="you@example.com" required >
             </div>
 
             <div class="field">
@@ -115,8 +119,11 @@
                 <p class="footer-text">Get reading tips and updates.</p>
 
                 <form class="newsletter" id="newsletterForm">
-                    <input id="newsEmail" type="email" placeholder="you@example.com" required>
-                    <button type="submit">Subscribe</button>
+                    <label for="newsEmail">Email</label>
+                    <div class="newsletter-row">
+                        <input id="newsEmail" type="email" placeholder="you@example.com" required>
+                        <button type="submit">Subscribe</button>
+                    </div>
                 </form>
 
                 <p id="newsMsg"></p>
