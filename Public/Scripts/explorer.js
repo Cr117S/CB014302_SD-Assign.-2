@@ -50,7 +50,7 @@ const books = [
     genre: "fantasy",
     length: "very long",
     pages: 973,
-    cover: "../../Assets/Images/A Storm of Swords.jpeg",
+    cover: "../../Assets/Images/A-Storm-of-Swords.jpeg",
     synopsis:
       "Wars rage across Westeros as shocking betrayals and legendary battles reshape the Seven Kingdoms.",
     series: {
@@ -77,7 +77,7 @@ const books = [
     genre: "fantasy",
     length: "long",
     pages: 694,
-    cover: "../../Assets/Images/A Game of Thrones.jpeg",
+    cover: "../../Assets/Images/A-Game-of-Thrones.jpeg",
     synopsis:
       "Noble families vie for control of the Iron Throne in a brutal medieval world.",
     series: {
@@ -104,7 +104,7 @@ const books = [
     genre: "self help",
     length: "medium",
     pages: 320,
-    cover: "../../Assets/Images/Atomic Habits.jpeg",
+    cover: "../../Assets/Images/Atomic-Habits.jpeg",
     synopsis:
       "A practical guide to building good habits and breaking bad ones.",
     series: {
@@ -158,7 +158,7 @@ const books = [
     genre: "fantasy",
     length: "long",
     pages: 607,
-    cover: "../../Assets/Images/Harry Potter and the Half-Blood Prince.jpeg",
+    cover: "../../Assets/Images/Harry-Potter-and-the-Half-Blood-Prince.jpeg",
     synopsis:
       "Harry learns about Voldemort’s past while dark forces tighten their grip on the wizarding world.",
     series: {
@@ -185,7 +185,7 @@ const books = [
     genre: "philosophical",
     length: "short",
     pages: 208,
-    cover: "../../Assets/Images/The Alchemist.jpeg",
+    cover: "../../Assets/Images/The-Alchemist.jpeg",
     synopsis: "A shepherd follows his dreams in search of personal destiny.",
     series: {
       prequels: [],
@@ -211,7 +211,7 @@ const books = [
     genre: "science fiction",
     length: "medium",
     pages: 369,
-    cover: "../../Assets/Images/the martian.jpg",
+    cover: "../../Assets/Images/the-martian.jpg",
     synopsis:
       "An astronaut must survive alone on Mars using science and ingenuity.",
     series: {
@@ -238,7 +238,7 @@ const books = [
     genre: "classic",
     length: "medium",
     pages: 281,
-    cover: "../../Assets/Images/to kill a mockingbird.jpg",
+    cover: "../../Assets/Images/to-kill-a-mockingbird.jpg",
     synopsis: "A young girl observes racial injustice in the American South.",
     series: {
       prequels: [],
@@ -264,7 +264,7 @@ const books = [
     genre: "mystery",
     length: "short",
     pages: 256,
-    cover: "../../Assets/Images/The Hound of the Baskervilles.jpeg",
+    cover: "../../Assets/Images/The-Hound-of-the-Baskervilles.jpeg",
     synopsis:
       "Sherlock Holmes investigates a legendary curse on the English moors.",
     series: {
