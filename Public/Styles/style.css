@@ -49,24 +49,17 @@ nav a {
   display: flex;
   align-items: center;
   height: 40px;
-  /* nicer pill size */
   padding: 0 14px;
   margin: 0 2px;
   text-decoration: none;
   color: #111;
   font-weight: 700;
   border-radius: 999px;
-  /* pill */
-  transition: background 0.2s ease, transform 0.15s ease;
 }
 
 nav a:hover {
   background: #f2f2f2;
   transform: translateY(-1px);
-}
-
-nav a:active {
-  transform: translateY(0);
 }
 
 /* menu icon */
@@ -306,7 +299,6 @@ nav a:active {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 16px;
-  font-family: Arial, sans-serif;
 }
 
 .book-card {
@@ -353,7 +345,6 @@ nav a:active {
   border-radius: 14px;
   background: #fff;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
-  font-family: Arial, sans-serif;
 }
 
 .Myform h2 {
@@ -472,7 +463,6 @@ nav a:active {
 .faq {
   width: min(92%, 700px);
   margin: 30px auto;
-  font-family: Arial, sans-serif;
 }
 
 .faq h2 {
@@ -558,12 +548,11 @@ nav a:active {
   background: #111;
   color: #fff;
   cursor: pointer;
-  transition: transform 0.15s ease, opacity 0.15s ease;
 }
 
 .btn.hovered {
   transform: translateY(-2px);
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 /* Flow - song =============================================================================== */
@@ -575,7 +564,6 @@ nav a:active {
   border: 1px solid whitesmoke;
   border-radius: 14px;
   text-align: center;
-  font-family: Arial, sans-serif;
 }
 
 .sound-box h3 {
@@ -822,7 +810,6 @@ nav a:active {
   border: 1px solid #111;
   border-radius: 14px;
   background: #fff;
-  font-family: Arial, sans-serif;
 }
 
 .progress-top {
