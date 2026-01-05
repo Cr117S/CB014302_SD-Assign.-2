@@ -1,5 +1,37 @@
+@font-face {
+  font-family: "MyFont1";
+  src: url("../../Assets/Fonts/HeptaSlab-Regular.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "MyFont2";
+  src: url("../../Assets/Fonts/AlanSans-Regular.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "MyFont3";
+  src: url("../../Assets/Fonts/MonteCarlo-Regular.ttf") format("truetype");
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: "MyFont1", sans-serif;
+}
+
+h1,
+h2,
+h3,
+nav {
+  font-family: "MyFont2", sans-serif;
+}
+
+.navIcon {
+  font-family: "MyFont3";
 }
 
 nav {
@@ -37,7 +69,9 @@ nav li {
   letter-spacing: 0.2px;
   font-size: 28px;
   background-color: rgb(170, 170, 170);
-  padding-left: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  letter-spacing: 2px;
 }
 
 .navLink {
@@ -54,7 +88,7 @@ nav a {
   text-decoration: none;
   color: #111;
   font-weight: 700;
-  border-radius: 999px;
+  border-radius: 99px;
 }
 
 nav a:hover {
