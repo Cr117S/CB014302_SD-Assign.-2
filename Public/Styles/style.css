@@ -30,6 +30,9 @@ nav {
   font-family: "MyFont2", sans-serif;
 }
 
+
+/* ------------------------------------------------------------------------------------- Navi Bar ----------------------------------------------------------------------------------- */
+
 .navIcon {
   font-family: "MyFont3";
 }
@@ -63,7 +66,7 @@ nav li {
   align-items: center;
 }
 
-/* brand on left */
+/* Brand on Left */
 .navIcon {
   font-weight: 800;
   letter-spacing: 0.2px;
@@ -78,7 +81,7 @@ nav li {
   margin-right: auto;
 }
 
-/* links */
+/* Navi - Links */
 nav a {
   display: flex;
   align-items: center;
@@ -96,7 +99,10 @@ nav a:hover {
   transform: translateY(-1px);
 }
 
-/* menu icon */
+/* ---------------------------------------------------------------------------- Mobile View ------------------------------------------------------------------------------- */
+
+
+/* ====================== Menu Icon ====================== */
 .menuBtn {
   display: none;
   width: 34px;
@@ -113,7 +119,7 @@ nav a:hover {
   cursor: pointer;
 }
 
-/* ===== Sidebar ===== */
+/* ====================== Sidebar ====================== */
 .sidebar {
   position: fixed;
   top: 0;
@@ -132,7 +138,7 @@ nav a:hover {
   gap: 8px;
 }
 
-/* close icon */
+/* ====================== Close Icon ====================== */
 .sidebar img {
   width: 34px;
   height: 34px;
@@ -173,7 +179,8 @@ nav a:hover {
   justify-content: end;
 }
 
-/* ===== Mobile ===== */
+/* ====================== Mobile ====================== */
+
 @media (max-width: 800px) {
   .hideOnMobile {
     display: none;
@@ -184,7 +191,13 @@ nav a:hover {
   }
 }
 
-/* Slider =============================================================================== */
+
+
+/* ********************************************************************************************************************************************************** */
+/* ---------------------------------------------------------------------------- Home ------------------------------------------------------------------------ */
+
+
+/* ======================================================== Home [Slider] ===================================================== */
 
 .home-slider {
   margin: auto;
@@ -195,7 +208,7 @@ nav a:hover {
   padding: 80px 0;
 }
 
-/* The moving row */
+/* ==== The moving row ===== */
 .slider-track {
   display: flex;
   transition: transform 0.6s ease-in-out;
@@ -216,7 +229,7 @@ nav a:hover {
   gap: 2rem;
 }
 
-/* Left text */
+/* ==== Left text ==== */
 .text {
   color: #e5e7eb;
   max-width: 50%;
@@ -235,7 +248,7 @@ nav a:hover {
   line-height: 1.5;
 }
 
-/* Right image */
+/* ===== Right image ===== */
 .slide-inner img {
   width: 220px;
   object-fit: cover;
@@ -262,7 +275,7 @@ nav a:hover {
   }
 }
 
-/* Author - home ================================================================================================================================================ */
+/* ======================================================== Home [Author] ===================================================== */
 
 .author {
   max-width: 720px;
@@ -325,7 +338,8 @@ nav a:hover {
   }
 }
 
-/* Books - explorer =============================================================================== */
+/* ***************************************************************************************************************************************** */
+/* --------------------------------------------------------------- Books - Explorer ------------------------------------------------------- */
 
 .books {
   width: min(92%, 1000px);
@@ -369,130 +383,227 @@ nav a:hover {
   font-style: italic;
 }
 
-/* Form - every =============================================================================== */
 
-.Myform {
-  max-width: 520px;
-  margin: 28px auto;
-  padding: 20px 18px;
-  border: 1px solid #e6e6e6;
+/* ***************************************************************************************************************************************** */
+/* ---------------------------------------------------------- Books - Tracker ------------------------------------------------------------- */
+
+.progress-card {
+  width: min(92%, 520px);
+  margin: 18px auto;
+  padding: 16px;
+  border: 1px solid #111;
   border-radius: 14px;
   background: #fff;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
 }
 
-.Myform h2 {
-  margin: 0 0 14px;
-  font-size: 18px;
+.progress-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.progress-label {
+  margin: 0;
   font-weight: 700;
   color: #111;
+}
+
+.progress-percent {
+  margin: 0;
+  font-weight: 800;
+  color: #111;
+}
+
+.progress {
+  width: 100%;
+  height: 14px;
+  background: #f1f1f1;
+  border: 1px solid #111;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: #111;
+  border-radius: 1px;
+  transition: width 0.5s ease;
+}
+
+.progress-stats {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #444;
+  font-size: 13px;
+}
+
+.progress-stats p {
+  margin: 0;
+}
+
+/* Body BackG Styles */
+.explorerBG {
+  background-image: url("../../Assets/Images/explore.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 10px;
+  border-radius: 25px;
+  margin: 5px;
+}
+
+.flowBG {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url("../../Assets/Images/read.jpg");
+
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 10px;
+  border-radius: 25px;
+  margin: 5px;
+}
+
+
+/* ************************************************************************************************************************************************************ */
+/* --------------------------------------------------------------------- Books - Recommends ------------------------------------------------------------------- */
+
+.hidden {
+  display: none;
+}
+
+.btn-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.reco-card {
+  margin-top: 14px;
+  padding: 14px;
+  border: 1px solid #111;
+  border-radius: 12px;
   text-align: center;
 }
 
-/* Label and Input */
-.field {
-  width: 100%;
-  margin: 14px 0;
-  text-align: left;
+#recoAuthor {
+  margin: 6px 0 0;
+  color: #444;
+  font-style: italic;
 }
 
-.field label {
-  display: block;
-  margin-bottom: 6px;
+#recoMsg {
+  margin: 10px 0 0;
+  text-align: center;
   font-size: 14px;
-  font-weight: 600;
+}
+
+#recoMsg.error {
+  color: #555;
+  font-weight: 700;
+}
+
+#recoMsg.success {
   color: #111;
+  font-weight: 700;
 }
 
-.field input {
-  width: 100%;
-  padding: 12px 14px;
-  font-size: 15px;
-  color: #111;
-  background: #fff;
-  border: 1px solid #111;
-  border-radius: 10px;
-  outline: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+/* ********************************************************************************************************************************************************** */
+/* ----------------------------------------------------------------- Books - Flow --------------------------------------------------------------------------- */
+
+
+/* ======================================================== Flow [Completed Book] ===================================================== */
+
+.cozy-completed {
+  width: min(92%, 900px);
+  margin: 28px auto;
+  padding: 18px 16px;
+  border: 1px solid white;
+  border-radius: 14px;
 }
 
-.field input::placeholder {
-  color: #777;
+.cozy-completed h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 20px;
+  color: whitesmoke;
 }
 
-.field input:focus {
-  border-color: #000;
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.12);
+.cozy-text {
+  margin: 8px 0 18px;
+  text-align: center;
+  color: wheat;
+  line-height: 1.5;
+  font-size: 16px;
+  font-style: italic;
 }
 
-/* Textarea */
-.field textarea {
-  width: 100%;
-  min-height: 120px;
-  padding: 12px 14px;
-  font-size: 15px;
-  color: #111;
-  background: #fff;
-  border: 1px solid #111;
-  border-radius: 10px;
-  outline: none;
-  resize: vertical;
+.completed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 14px;
 }
 
-.field textarea::placeholder {
-  color: #777;
+.completed-card {
+  border: 1px solid wheat;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
 }
 
-.field textarea:focus {
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.12);
+.completed-card h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  color: white;
 }
 
-/* Selection section */
-.field select {
-  width: 100%;
-  padding: 12px 14px;
-  font-size: 15px;
-  color: #111;
-  background: #fff;
-  border: 1px solid #111;
-  border-radius: 10px;
-  outline: none;
+.completed-card p {
+  margin: 0;
+  font-size: 14px;
+  color: wheat;
+  font-style: italic;
 }
 
-.field select:focus {
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.12);
+.empty-msg {
+  margin: 14px 0 0;
+  text-align: center;
+  color: #666;
 }
 
-.field input,
-.field select,
-.field textarea {
-  box-sizing: border-box;
-  width: 100%;
+
+/* ============================================================ Flow [Cozy Vibes] ===================================================== */
+
+.sound-box {
+  width: min(92%, 600px);
+  margin: 24px auto;
+  padding: 18px 16px;
+  border: 1px solid whitesmoke;
+  border-radius: 14px;
+  text-align: center;
 }
 
-@media (max-width: 480px) {
-  .Myform {
-    margin: 18px 12px;
-    padding: 16px 14px;
-  }
-
-  .field {
-    margin: 12px 0;
-    padding: 0;
-  }
-
-  .FormBtnDiv {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .FormBtnDiv .btn {
-    width: 100%;
-    margin-bottom: 10px;
-  }
+.sound-box h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: white;
 }
 
-/* Feedback =============================================================================== */
+.sound-desc {
+  margin: 0 0 14px;
+  line-height: 1.5;
+  color: white;
+  font-size: 14px;
+}
+
+
+/* ***************************************************************************************************************************************** */
+/* -------------------------------------------------------------- Books - Feedback ----------------------------------------------------------------- */
 
 .faq {
   width: min(92%, 700px);
@@ -537,7 +648,7 @@ nav a:hover {
   line-height: 1.5;
 }
 
-/* open state */
+/* '''' Open State '''' */
 .faq-q.active {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -552,7 +663,7 @@ nav a:hover {
   font-weight: 900;
 }
 
-/* feeedback  ====================================================================  */
+/* Feeedback ---------------------------------------------------------------- */
 #feedbackMsg {
   margin: 12px 0 0;
   text-align: center;
@@ -565,11 +676,14 @@ nav a:hover {
 }
 
 #feedbackMsg.error {
-  color: #555;
+  color: #d80000f2;
   font-weight: 700;
 }
 
-/* Btn with JS styles =============================================================================== */
+
+
+/* ---------------------------------------------------------------------------------------------------------- */
+/* ---------- Btn with JS styles --------------------------------------------------------------------------- */
 
 .FormBtnDiv {
   text-align: center;
@@ -589,31 +703,134 @@ nav a:hover {
   opacity: 0.8;
 }
 
-/* Flow - song =============================================================================== */
 
-.sound-box {
-  width: min(92%, 600px);
-  margin: 24px auto;
-  padding: 18px 16px;
-  border: 1px solid whitesmoke;
+/* --------------------------------------------------------------------------------------------------------------- */
+/* --- Form - Every --------------------------------------------------------------------------------------------- */
+
+.Myform {
+  max-width: 520px;
+  margin: 28px auto;
+  padding: 20px 18px;
+  border: 1px solid #e6e6e6;
   border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.Myform h2 {
+  margin: 0 0 14px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
   text-align: center;
 }
 
-.sound-box h3 {
-  margin: 0 0 8px;
-  font-size: 18px;
-  color: white;
+/* ================ Label and Input ================ */
+.field {
+  width: 100%;
+  margin: 14px 0;
+  text-align: left;
 }
 
-.sound-desc {
-  margin: 0 0 14px;
-  line-height: 1.5;
-  color: white;
+.field label {
+  display: block;
+  margin-bottom: 6px;
   font-size: 14px;
+  font-weight: 600;
+  color: #111;
 }
 
-/*  Footer ================================================================================================================================================ */
+.field input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 15px;
+  color: #111;
+  background: #fff;
+  border: 1px solid #111;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.field input::placeholder {
+  color: #777;
+}
+
+.field input:focus {
+  border-color: #000;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.12);
+}
+
+/* ==================== TextArea ==================== */
+.field textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px 14px;
+  font-size: 15px;
+  color: #111;
+  background: #fff;
+  border: 1px solid #111;
+  border-radius: 10px;
+  outline: none;
+  resize: vertical;
+}
+
+.field textarea::placeholder {
+  color: #777;
+}
+
+.field textarea:focus {
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.12);
+}
+
+/* ================= Selection section =============== */
+.field select {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 15px;
+  color: #111;
+  background: #fff;
+  border: 1px solid #111;
+  border-radius: 10px;
+  outline: none;
+}
+
+.field select:focus {
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.12);
+}
+
+.field input,
+.field select,
+.field textarea {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .Myform {
+    margin: 18px 12px;
+    padding: 16px 14px;
+  }
+
+  .field {
+    margin: 12px 0;
+    padding: 0;
+  }
+
+  .FormBtnDiv {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .FormBtnDiv .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+
+/* ------------------------------------------------------------******************************------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ Footer ------------------------------------------------------------------------------------ */
 
 .footer {
   margin-top: 40px;
@@ -734,185 +951,4 @@ nav a:hover {
   .newsletter-row {
     flex-direction: column;
   }
-}
-
-/* recommends  ==================================================================== */
-.hidden {
-  display: none;
-}
-
-.btn-row {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.reco-card {
-  margin-top: 14px;
-  padding: 14px;
-  border: 1px solid #111;
-  border-radius: 12px;
-  text-align: center;
-}
-
-#recoAuthor {
-  margin: 6px 0 0;
-  color: #444;
-  font-style: italic;
-}
-
-#recoMsg {
-  margin: 10px 0 0;
-  text-align: center;
-  font-size: 14px;
-}
-
-#recoMsg.error {
-  color: #555;
-  font-weight: 700;
-}
-
-#recoMsg.success {
-  color: #111;
-  font-weight: 700;
-}
-
-/* flow completed book  ==================================================================== */
-.cozy-completed {
-  width: min(92%, 900px);
-  margin: 28px auto;
-  padding: 18px 16px;
-  border: 1px solid white;
-  border-radius: 14px;
-}
-
-.cozy-completed h2 {
-  margin: 0;
-  text-align: center;
-  font-size: 20px;
-  color: whitesmoke;
-}
-
-.cozy-text {
-  margin: 8px 0 18px;
-  text-align: center;
-  color: wheat;
-  line-height: 1.5;
-  font-size: 16px;
-  font-style: italic;
-}
-
-.completed-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 14px;
-}
-
-.completed-card {
-  border: 1px solid wheat;
-  border-radius: 12px;
-  padding: 12px;
-  text-align: center;
-}
-
-.completed-card h3 {
-  margin: 0 0 6px;
-  font-size: 16px;
-  color: white;
-}
-
-.completed-card p {
-  margin: 0;
-  font-size: 14px;
-  color: wheat;
-  font-style: italic;
-}
-
-.empty-msg {
-  margin: 14px 0 0;
-  text-align: center;
-  color: #666;
-}
-
-/* tracker ==================================================================== */
-.progress-card {
-  width: min(92%, 520px);
-  margin: 18px auto;
-  padding: 16px;
-  border: 1px solid #111;
-  border-radius: 14px;
-  background: #fff;
-}
-
-.progress-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.progress-label {
-  margin: 0;
-  font-weight: 700;
-  color: #111;
-}
-
-.progress-percent {
-  margin: 0;
-  font-weight: 800;
-  color: #111;
-}
-
-.progress {
-  width: 100%;
-  height: 14px;
-  background: #f1f1f1;
-  border: 1px solid #111;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.progress-fill {
-  height: 100%;
-  width: 0%;
-  background: #111;
-  border-radius: 1px;
-  transition: width 0.5s ease;
-}
-
-.progress-stats {
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  color: #444;
-  font-size: 13px;
-}
-
-.progress-stats p {
-  margin: 0;
-}
-
-/* Body BG styles */
-.explorerBG {
-  background-image: url("../../Assets/Images/explore.jpg");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  padding: 10px;
-  border-radius: 25px;
-  margin: 5px;
-}
-
-.flowBG {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
-    url("../../Assets/Images/read.jpg");
-
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  padding: 10px;
-  border-radius: 25px;
-  margin: 5px;
 }

@@ -18,7 +18,8 @@ document.querySelectorAll(".btn").forEach((btn) => {
   btn.addEventListener("mouseleave", () => btn.classList.remove("hovered"));
 });
 
-// footer
+// -------------------------------------------------------------------------- Footer -----------------------------------------------------------------------------------------------
+
 const newsletterForm = document.getElementById("newsletterForm");
 const emailI = document.getElementById("newsEmail");
 const newsMsg = document.getElementById("newsMsg");
